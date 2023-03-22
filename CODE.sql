@@ -102,19 +102,7 @@ CREATE TABLE IF NOT EXISTS `Clinica`.`Consulta` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-#3
-ALTER TABLE Funcionario ADD nroa int;
 
-#4
-alter table medico add index idx_cpf (cpf);
-alter table paciente add index idx_doenca (doenca);
-
-#5
-DROP INDEX idx_doenca ON paciente;
-
-#6
-ALTER TABLE Funcionario DROP COLUMN cargo;
-ALTER TABLE Funcionario DROP COLUMN nroa;
 
 
 
